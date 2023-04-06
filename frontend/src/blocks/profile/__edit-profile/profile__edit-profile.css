@@ -1,0 +1,28 @@
+.profile__edit-profile {
+    width: 24px;
+    height: 24px;
+    border: 1px solid white;
+    background-color: #000000;
+    background-image: url(../../../images/edd-profile.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    
+    
+   
+}
+
+.profile__edit-profile:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 492px) {
+    .profile__edit-profile {
+        width: 18px;
+        height: 18px;
+        background-image: url(../../../images/m-edit-profile.svg);
+
+    }
+}
+

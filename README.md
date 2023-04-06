@@ -8,8 +8,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 51.250.90.141
 
-Frontend https://...
+Frontend https://mesto.prokhorov.nomoredomains.monster/
 
-Backend https://...
+Backend https://api.mesto.prokhorov.nomoredomains.monster/

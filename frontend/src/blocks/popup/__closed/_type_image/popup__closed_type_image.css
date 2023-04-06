@@ -1,0 +1,28 @@
+.popup__closed_type_image {
+   right: -30px;
+   top: -40px;
+}
+
+@media screen and (max-width: 656px) {
+   .popup__closed_type_image {
+      right: 55px;
+      top: -35px;
+      width: 20px;
+      height: 20px;
+        
+   }
+}
+
+@media screen and (max-width: 492px) {
+    .popup__closed_type_image {
+      right: 55px;
+      top: -35px; 
+   }
+ }
+
+ @media screen and (max-width: 320px) {
+   .popup__closed_type_image {
+      right: 17px;
+      top: -35px;
+   }
+ }

@@ -1,0 +1,26 @@
+.popup__container_type_image {
+   max-width: initial;
+   background-color: transparent;
+   padding-left: 19px;
+   padding-right: 19px;  
+}
+
+@media screen and (max-width: 656px) {
+   .popup__container_type_image {
+     max-width: 618px;
+     
+   }
+ }
+
+ @media screen and (max-width: 492px) {
+   .popup__container_type_image {
+     max-width: 454px;
+     
+   }
+ }
+ 
+@media screen and (max-width: 320px) {
+   .popup__container_type_image {
+     max-width: 282px;
+   }
+ }

@@ -1,0 +1,31 @@
+.popup__button_type_login {
+    width: 358px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+    border: 0;
+    margin: 0;
+    margin-top: 216px;
+    margin-bottom: 15px;
+    padding: 0;
+    cursor: pointer;
+    color:  #000;
+    font-family: inherit;
+    background-color: white;
+  }
+  
+  .popup__button:hover {
+    opacity: .8;
+  }
+
+  @media screen and (max-width: 492px) {
+    .popup__button {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 45px;
+        margin-bottom: 25px;
+        width: 238px;
+        height: 46px;
+    }
+        
+  }

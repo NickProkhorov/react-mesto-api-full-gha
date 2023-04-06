@@ -1,0 +1,12 @@
+.header__logout {
+    color: rgba(169, 169, 169, 1);
+    text-decoration: none;
+    opacity: 0.8;
+    margin-left: 24px;    
+}
+
+.header__logout:hover {
+
+    opacity: 1;
+
+}

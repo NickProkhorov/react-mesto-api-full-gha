@@ -11,7 +11,7 @@ const errorHandler = require('./middlewares/error-handler');
 const { PORT = 3000 } = process.env;
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors());
 app.use(express.json());
 app.use(requestLogger);
 app.get('/crash-test', () => {

@@ -1,0 +1,10 @@
+.popup__container_type_login {
+    max-width: 430px;
+    position: relative;
+}
+
+@media screen and (max-width: 492px) {
+    .popup__container {
+      max-width: 282px;
+    }
+  }

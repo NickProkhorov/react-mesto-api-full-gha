@@ -1,0 +1,25 @@
+.popup__item {
+  border: 0;
+  width: 358px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  outline: none;
+  padding: 0;
+  font-size: 14px;
+  line-height: 2;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style:  normal;
+  font-weight: 400;
+  text-decoration-color: #000;
+}
+
+.popup__item.popup__item:nth-child(3n) {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 492px) {
+  .popup__item {
+    max-width: 238px;
+  }
+      
+}

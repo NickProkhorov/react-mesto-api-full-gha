@@ -1,0 +1,29 @@
+.popup__item_type_login {
+  
+  width: 358px;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  border-width: 0px 0px 1px;
+  background-color: black;
+  outline: none;
+  padding: 0;
+  color: white;
+
+  font-size: 14px;
+  line-height: 2;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style:  normal;
+  font-weight: 400;
+  text-decoration-color: white;
+}
+
+.popup__item_type_login.popup__item_type_login:nth-child(3n) {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 492px) {
+  .popup__item_type_login {
+    max-width: 238px;
+  }
+      
+}

@@ -1,0 +1,22 @@
+.popup__heading_infotool{
+    color: #000000;
+    font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+    font-style:  normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 32px 36px 60px 36px;
+
+    text-align: center;
+    max-width: 358px;
+}
+
+
+
+@media screen and (max-width: 492px) {
+    .popup__heading_infotool {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 25px 22px 75px;
+    }
+}

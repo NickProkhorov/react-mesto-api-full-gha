@@ -1,0 +1,27 @@
+.profile__avatar-overlay{
+    position: relative;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 26px;
+}
+
+@media screen and (max-width: 492px) {
+    .profile__avatar-overlay {
+        margin: 0;
+        margin-right: none;
+    }
+}
+
+.profile__avatar-overlay::before{
+    position: absolute;
+    content: '';
+    background-image: url('../../../images/edit-avatar.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}

@@ -1,0 +1,12 @@
+.popup_type_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+@media screen and (max-width: 320px) {
+    .popup {
+      max-width: 320px;
+    }
+}

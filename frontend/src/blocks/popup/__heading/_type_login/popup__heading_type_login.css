@@ -1,0 +1,15 @@
+.popup__heading_type_login {
+    color: white;
+    text-align: center;
+    margin: 60px 34px 50px 36px;
+    
+}
+
+@media screen and (max-width: 492px) {
+    .popup__heading {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 25px 22px 75px;
+    }
+        
+  }
