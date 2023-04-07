@@ -7,7 +7,7 @@ const ForbiddenError = require('../errors/forbidden-err');
 module.exports.getCards = (req, res, next) => {
   Card.find({})
     .populate(['owner', 'likes'])
-    .then((cards) => res.status(http2.constants.HTTP_STATUS_OK).send(cards))
+    .then((cards) => res.send(cards))
     .catch(next);
 };
 
@@ -17,8 +17,14 @@ module.exports.createCard = (req, res, next) => {
 
   Card.create({ name, link, owner })
     .then((card) => card.populate('owner'))
-    .then((card) => res.status(http2.constants.HTTP_STATUS_OK).send(card))
-    .catch(next);
+    .then((card) => res.send(card))
+    .catch((err) => {
+      if (err.name === 'ValidationError') {
+        next(new BadRequestError('Переданы некорректные данные при создании карточки'));
+        return;
+      }
+      next(err);
+    });
 };
 
 module.exports.deleteCard = (req, res, next) => {
@@ -31,7 +37,7 @@ module.exports.deleteCard = (req, res, next) => {
       const userId = req.user._id;
       if (cardOwnerId === userId) {
         Card.findByIdAndRemove(req.params.cardId)
-          .then((card) => res.status(http2.constants.HTTP_STATUS_OK).send(card))
+          .then((card) => res.send(card))
           .catch(next);
       } else {
         throw new ForbiddenError('Нельзя удалить чужую карточку');
@@ -51,7 +57,7 @@ module.exports.likeCard = (req, res, next) => {
       if (!card) {
         throw new NotFoundError('Передан несуществующий id карточки.');
       }
-      return res.status(http2.constants.HTTP_STATUS_OK).send(card);
+      return res.send(card);
     })
     .catch((err) => {
       if (err.name === 'CastError') {

@@ -101,7 +101,7 @@ module.exports.updateUserProfile = (req, res, next) => {
         });
     })
     .catch((err) => {
-      if (err.name === 'CastError') {
+      if (err.name === 'ValidationError') {
         next(new BadRequestError('Переданы некорректные данные при обновлении профиля'));
         return;
       }
@@ -122,7 +122,7 @@ module.exports.updateUserAvatar = (req, res, next) => {
         });
     })
     .catch((err) => {
-      if (err.name === 'CastError') {
+      if (err.name === 'ValidationError') {
         next(new BadRequestError('Переданы некорректные данные при обновлении аватара'));
         return;
       }

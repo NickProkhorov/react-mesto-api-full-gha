@@ -15,6 +15,8 @@ function AddPlacePopup({isOpen, onClose, onSubmit, submitValue}){
         e.preventDefault();
         const newCard = {name: name, link: link};
         onSubmit(newCard);
+        setName('');
+        setLink('');
     }
 
     return(

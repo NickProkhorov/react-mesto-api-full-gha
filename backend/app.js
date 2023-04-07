@@ -26,8 +26,4 @@ app.use(errorHandler);
 
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
 
-app.get('/', (req, res) => {
-  res.send('hello world!');
-});
-
 app.listen(PORT);
