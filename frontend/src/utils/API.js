@@ -112,7 +112,7 @@ class API {
 }
 
 const apiConfig = {
-    baseUrl:'http://localhost:3001/',
+    baseUrl:'https://api.mesto.prokhorov.nomoredomains.monster/',
     headers:{
       "Authorization": `Bearer ${localStorage.getItem('jwt')}`, 
       "Content-Type": 'application/json'
